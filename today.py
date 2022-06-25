@@ -7,19 +7,19 @@ def rand_choice():
     Canvas.itemconfig(canvas_img, image=r_img)
 
 window = Tk()
-window.title("파란바다")
+window.title("오늘의 운세")
 
 
-Canvas = Canvas(window, height=680, width=680, bg="ivory")
+Canvas = Canvas(window, height=655, width=680, bg="ivory")
 Canvas.pack()
 
-img_main = PhotoImage(file="images/gift.png")
+img_main = PhotoImage(file="stars.png")
 canvas_img = Canvas.create_image(340, 340, image=img_main)
 Canvas.create_text(340, 30, text="랜덤박스", fill="brown",
                    font=("나눔바른펜", 30, "bold"))
 
 img_list = []
-for i in range(8):
+for i in range(12):
     img = PhotoImage(file=f"images/img{i}.png")
     img_list.append(img)
 
