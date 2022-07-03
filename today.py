@@ -10,12 +10,12 @@ window = Tk()
 window.title("astrology")
 
 
-Canvas = Canvas(window, height=950, width=950, bg="ivory")
+Canvas = Canvas(window, height=680, width=680, bg="ivory")
 Canvas.pack()
 
 img_main = PhotoImage(file="asas.png")
-canvas_img = Canvas.create_image(475, 475, image=img_main)
-Canvas.create_text(475, 30, text="소원을 말해봐", fill="brown",
+canvas_img = Canvas.create_image(455, 475, image=img_main)
+Canvas.create_text(340, 30, text="소원을 말해봐", fill="brown",
                    font=("나눔바른펜", 30, "bold"))
 
 img_list = []
@@ -26,7 +26,7 @@ for i in range(10):
 button = Button(window, text="Click", bg="white", fg="hot pink",
                 font=("나눔바른펜", 20, "bold"),
                 command=rand_choice)
-button.place(x=885, y=0)
+button.place(x=590, y=0)
 
 
 window.mainloop()
